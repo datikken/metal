@@ -15,7 +15,7 @@
                 <div class="box-image-4">
                     <a href="/work/9/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/0/9/group_9/small_group_9.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/0/9/group_9/small_group_9.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">
@@ -30,7 +30,7 @@
                 <div class="box-image-4">
                     <a href="/work/10/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/1/0/group_10/small_group_10.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/1/0/group_10/small_group_10.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">
@@ -45,7 +45,7 @@
                 <div class="box-image-4">
                     <a href="/work/11/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/1/1/group_11/small_group_11.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/1/1/group_11/small_group_11.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">

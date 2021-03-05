@@ -5,6 +5,10 @@
 
 /*@import 'tailwindcss/utilities';*/
 
+body {
+  font-family: "Open Sans", "sans-serif";
+}
+
 .bolder {
   font-weight: 600;
 }
@@ -3551,7 +3555,7 @@ dl.hiw dd h4, dl.hiw dd .lead {
 }
 
 .section.cta .cta-info {
-  width: 60%;
+  width: 61%;
   margin: 0 auto;
   text-align: center;
   font-family: "Open Sans", sans-serif;

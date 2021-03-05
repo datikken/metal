@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-
 @section('content')
     @include('components.slider')
     @include('components.services')
     @include('components.features')
+    @include('components.projects')
     @include('components.testimony')
     @include('components.cta')
     @include('components.blog')
