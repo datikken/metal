@@ -28,11 +28,16 @@ class PageController extends Controller
 
     public function news()
     {
-        return view('pages.news.blade');
+        return view('pages.news');
     }
 
     public function contacts()
     {
         return view('pages.contacts');
+    }
+
+    public function test()
+    {
+        return view('pages.test');
     }
 }

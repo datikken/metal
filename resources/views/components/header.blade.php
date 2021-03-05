@@ -78,8 +78,6 @@
                 </a>
 
                 <nav class="navbar-collapse collapse">
-
-
                     <ul class="nav navbar-nav navbar-left">
                         <li class="{{ (request()->is('/')) ? 'active' : '' }}" >
                             <a href="/">Главная</a>
@@ -87,7 +85,7 @@
                         <li class="{{ (request()->is('company')) ? 'active' : '' }}">
                             <a href="/company/">О компании</a>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown {{ (request()->is('services')) ? 'active' : '' }}">
                             <a href="/services/"
                                class="dropdown-toggle"
                                data-toggle="dropdown"

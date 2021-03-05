@@ -7,7 +7,6 @@
                     <div class="body-content">
                         <div class="heading">Позвоните нам</div>
                         Телефон: 8 (495) 123-45-67
-
                     </div>
                 </div>
             </div>

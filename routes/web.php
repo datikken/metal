@@ -13,6 +13,9 @@ Route::get('/work', [PageController::class, 'work'])->name('work');
 Route::get('/news', [PageController::class, 'news'])->name('news');
 Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
 
+
+Route::get('/test', [PageController::class, 'test'])->name('test');
+
 /**
  * AJAX routes
  */
