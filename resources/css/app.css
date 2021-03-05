@@ -189,10 +189,10 @@ input,
 select,
 textarea {
     color: #222222;
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7; }
+    line-height: 1.7;
+}
 
 h1,
 h2,

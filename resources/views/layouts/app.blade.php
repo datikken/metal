@@ -10,6 +10,7 @@
     <meta name="description" content="Металлообработка"/>
     <meta name="keywords" content="Металлообработка"/>
     <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i, 600,700,800">
     <link rel="stylesheet" type="text/css" href="/vendor/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/vendor/css/owl.carousel.min.css">
