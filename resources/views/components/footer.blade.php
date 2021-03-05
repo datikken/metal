@@ -98,7 +98,7 @@
                             <a href="/services/" title="Услуги">Услуги</a>
                         </li>
                         <li>
-                            <a href="/works/" title="Наши работы">Наши работы</a>
+                            <a href="/work/" title="Наши работы">Наши работы</a>
                         </li>
                         <li>
                             <a href="/news/" title="Новости">Новости</a>
@@ -142,7 +142,7 @@
 <script>
     function callbackform() {
         $.fancybox.open({
-            src: '/contacts/callback/?newform',
+            src: '/contacts.blade.php/callback/?newform',
             type: 'ajax'
         });
     }
@@ -150,7 +150,7 @@
     $(document).ready(function () {
         $('body').on('click', '#form2 #button_form2', function () {
             $.loadingScreen('show');
-            $('.ajax-result-form2').load('/contacts/callback/', {
+            $('.ajax-result-form2').load('/contacts.blade.php/callback/', {
                 name_c: document.getElementById('name_c').value,
                 phone_c: document.getElementById('phone_c').value,
                 action_c: document.getElementById('action_c').value
@@ -158,7 +158,7 @@
         });
         $('body').on('click', '#form3 #button_form3', function () {
             $.loadingScreen('show');
-            $('.ajax-result-form3').load('/contacts/feedback/', {
+            $('.ajax-result-form3').load('/contacts.blade.php/feedback/', {
                 name: document.getElementById('name').value,
                 phone: document.getElementById('phone').value,
                 email: document.getElementById('email').value,

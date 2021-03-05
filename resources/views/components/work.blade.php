@@ -1,21 +1,11 @@
-<div class="section project">
+<div class="section why overlap">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <h2 class="section-heading white">
-                    Наши работы
-                </h2>
-            </div>
-        </div>
-
-
-
         <div class="row grid-services" style="position: relative; height: 390px;">
             <div class="col-sm-6 col-md-4" style="position: absolute; left: 0px; top: 0px;">
                 <div class="box-image-4">
                     <a href="/work/9/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/0/9/group_9/small_group_9.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/0/9/group_9/small_group_9.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">
@@ -30,7 +20,7 @@
                 <div class="box-image-4">
                     <a href="/work/10/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/1/0/group_10/small_group_10.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/1/0/group_10/small_group_10.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">
@@ -45,7 +35,7 @@
                 <div class="box-image-4">
                     <a href="/work/11/" title="">
                         <div class="media">
-                            <img src="/upload/information_system_21/0/1/1/group_11/small_group_11.jpg" alt="" class="img-responsive">
+                            <img src="http://t1167801.tmpl24.ru/upload/information_system_21/0/1/1/group_11/small_group_11.jpg" alt="" class="img-responsive">
                         </div>
                         <div class="body">
                             <div class="content">
@@ -57,6 +47,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>

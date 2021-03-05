@@ -15,4 +15,24 @@ class PageController extends Controller
     {
         return view('pages.company');
     }
+
+    public function services()
+    {
+        return view('pages.services');
+    }
+
+    public function work()
+    {
+        return view('pages.work');
+    }
+
+    public function news()
+    {
+        return view('pages.news.blade');
+    }
+
+    public function contacts()
+    {
+        return view('pages.contacts');
+    }
 }

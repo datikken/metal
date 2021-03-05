@@ -115,8 +115,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="{{ (request()->is('works')) ? 'active' : '' }}">
-                            <a href="/works/">Наши работы</a>
+                        <li class="{{ (request()->is('work')) ? 'active' : '' }}">
+                            <a href="/work/">Наши работы</a>
                         </li>
                         <li class="{{ (request()->is('news')) ? 'active' : '' }}">
                             <a href="/news/">Новости</a>
