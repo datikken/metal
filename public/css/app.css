@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i, 600,700,800);
 /*@import 'tailwindcss/base';*/
+
 /*@import 'tailwindcss/components';*/
+
 /*@import 'tailwindcss/utilities';*/
 
 .bolder {
@@ -4095,7 +4098,7 @@ dl.hiw dd h4, dl.hiw dd .lead {
   color: #c4272b;
 }
 
-.formblock { padding: 20px;  font-size: 16px; padding-top: 5px;  max-width: 410px;
+.formblock { padding: 20px;  font-size: 16px; padding-top: 5px;
 }
 
 .formblock label { padding: 0px; margin: 0px; font-size: 16px; text-align: left;
@@ -4110,10 +4113,15 @@ dl.hiw dd h4, dl.hiw dd .lead {
 .formblock .form_label { margin-top: 0px;  margin-bottom: 5px;
 }
 
-.formblock .form_table { border: 0px; width:  100%; max-width: 410px;
+.formblock .form_table { border: 0px; width:  100%;
 }
 
 .formblock .form_table td { border: 0px;
+}
+
+.fancybox-content {
+  max-width: 500px;
+  padding: 44px;
 }
 
 .ajax-result-form2 { margin: 0px; padding: 0px; margin-top: 15px; margin-bottom: 15px;

@@ -142,7 +142,7 @@
 <script>
     function callbackform() {
         $.fancybox.open({
-            src: '/contacts.blade.php/callback/?newform',
+            src: '/ajax_callback_form',
             type: 'ajax'
         });
     }
