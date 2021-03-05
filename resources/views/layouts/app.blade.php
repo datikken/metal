@@ -19,10 +19,7 @@
 </head>
 <body class="font-sans antialiased">
     @include('components.header')
-    <main>
         @yield('content')
-    </main>
-
     @include('components.footer')
     @livewireScripts
     @livewireStyles

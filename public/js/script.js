@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
 	"use strict";
-	
 
-	
+
+
 	/* =================================
-	NAVBAR 
+	NAVBAR
 	=================================== */
 	jQuery(window).scroll(function () {
 		var top = jQuery(document).scrollTop();
@@ -15,12 +15,12 @@ $(document).ready(function(){
 		if ( top > batas ) {
 			jQuery('.navbar-main').addClass('stiky');
 		}else {
-			jQuery('.navbar-main').removeClass('stiky'); 
+			jQuery('.navbar-main').removeClass('stiky');
 		}
 	});
-	
+
 	/* =================================
-	BANNER ROTATOR IMAGE 
+	BANNER ROTATOR IMAGE
 	=================================== */
 	$('#slides').superslides({
 		//animation: "fade",
@@ -29,11 +29,11 @@ $(document).ready(function(){
 		pagination: true,
 		hashchange: false,
 		scrollable: true,
-		
+
 	});
 
 	/* =================================
-	BACK TO TOP 
+	BACK TO TOP
 	=================================== */
 	// browser window scroll (in pixels) after which the "back to top" link is shown
 	var offset = 300,
@@ -47,7 +47,7 @@ $(document).ready(function(){
 	//hide or show the "back to top" link
 	$(window).scroll(function(){
 		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
+		if( $(this).scrollTop() > offset_opacity ) {
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
@@ -60,7 +60,7 @@ $(document).ready(function(){
 		 	}, scroll_top_duration
 		);
 	});
-	
+
 	/* =================================
 	ISOTOPE
 	=================================== */
@@ -73,7 +73,7 @@ $(document).ready(function(){
 	 	$('.portfolio_filter a').on('click', function() {
 	 		$('.portfolio_filter .active').removeClass('active');
 			$(this).addClass('active');
-	 
+
 			var selector = $(this).attr('data-filter');
 			$container.isotope({
 				filter: selector,
@@ -89,19 +89,19 @@ $(document).ready(function(){
 	/* =================================
 	OWL
 	=================================== */
-	
+
 	var caro = $("#caro");
 	caro.owlCarousel({
 		items: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
 	});
-	
+
 	var owl = $("#owl-testimony");
 	owl.owlCarousel({
-		autoplay: 5000,
+		autoplay: true,
 		stopOnHover: true,
 		margin: 30,
 		items : 2,
@@ -129,24 +129,23 @@ $(document).ready(function(){
 		dots: true,
 		loop: true
 	});
-	
+
 	/* =================================
 	FAQ
-	=================================== */	
+	=================================== */
 	$('.panel-heading a').on('click', function() {
 		$('.panel-heading').removeClass('active');
 		$(this).parents('.panel-heading').addClass('active');
 	});
-	
 
 
 
 
-	
+
+
 });
 
 
 
 
-  
-  
+
