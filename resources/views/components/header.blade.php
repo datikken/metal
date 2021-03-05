@@ -74,22 +74,26 @@
                 </div>
 
                 <a class="navbar-brand" href="/">
-                    <img src="./images/logo.png" alt=""/>
+                    <img src="http://t1167801.tmpl24.ru/images/t1167801/images/logo.png" alt=""/>
                 </a>
 
                 <nav class="navbar-collapse collapse">
 
 
                     <ul class="nav navbar-nav navbar-left">
-                        <li>
+                        <li class="{{ (request()->is('/')) ? 'active' : '' }}" >
                             <a href="/">Главная</a>
                         </li>
-                        <li>
+                        <li class="{{ (request()->is('company')) ? 'active' : '' }}">
                             <a href="/company/">О компании</a>
                         </li>
                         <li class="dropdown">
-                            <a href="/services/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Услуги<span
-                                    class="caret"></span></a>
+                            <a href="/services/"
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               data-hover="dropdown">
+                                Услуги
+                                <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="/services/gidroabrazivnaya-rezka/">Гидроабразивная резка</a>
@@ -111,15 +115,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li class="{{ (request()->is('works')) ? 'active' : '' }}">
                             <a href="/works/">Наши работы</a>
                         </li>
-                        <li>
+                        <li class="{{ (request()->is('news')) ? 'active' : '' }}">
                             <a href="/news/">Новости</a>
                         </li>
-                        <li>
+                        <li class="{{ (request()->is('contacts')) ? 'active' : '' }}">
                             <a href="/contacts/">Контакты</a>
-                        </li>
+                        </liclass>
                     </ul>
 
                 </nav>
