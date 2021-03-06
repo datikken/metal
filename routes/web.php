@@ -3,15 +3,22 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AjaxContentController;
+use App\Http\Livewire\ContactForm;
 /**
  * Page routes
  */
 Route::get('/', [PageController::class, 'index'])->name('index');
 Route::get('/company', [PageController::class, 'company'])->name('company');
 Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/services/:id', [PageController::class, 'service_details'])->name('service_details');
 Route::get('/work', [PageController::class, 'work'])->name('work');
 Route::get('/news', [PageController::class, 'news'])->name('news');
 Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
+
+/**
+ * API
+ */
+Route::get('/contact-form', [ContactForm::class, 'render'])->name('contact-form');
 
 
 Route::get('/test', [PageController::class, 'test'])->name('test');

@@ -13,8 +13,10 @@ class CreateContactsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contacts.blade.php', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->bigInteger('tel');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateContactsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contacts.blade.php');
+        Schema::dropIfExists('contactForm.php');
     }
 }

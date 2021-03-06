@@ -22,6 +22,10 @@
     @include('components.header')
         @yield('content')
     @include('components.footer')
+
+{{--    @include('components.forms.callback_form')--}}
+    @livewire('contact-form')
+
     @livewireScripts
     @livewireStyles
     <script src="{{ mix('js/app.js') }}" defer></script>

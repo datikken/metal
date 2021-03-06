@@ -56,8 +56,7 @@
                         8 (495) 123-45-67
                     </div>
                 </div>
-                <a href="javascript:void(0);" onclick="return callbackform();"
-                   class="btn btn-cta pull-right fancybox-inline">Обратный звонок</a>
+                <a id="contact_form_trigger" class="btn btn-cta pull-right">Обратный звонок</a>
             </div>
         </div>
     </div>

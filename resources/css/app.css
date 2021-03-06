@@ -1,10 +1,19 @@
 /*@import 'tailwindcss/base';*/
 /*@import 'tailwindcss/components';*/
 /*@import 'tailwindcss/utilities';*/
+@import "_modifiers.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i, 600,700,800");
 
+.contact-form-close {
+    top: 0;
+    right: 0;
+}
 body {
     font-family: "Open Sans", "sans-serif";
+}
+.error {
+    font-size: 13px;
+    color: #ed1c24;
 }
 .bolder {
     font-weight: 600; }
@@ -3346,9 +3355,15 @@ dl.hiw dd h4, dl.hiw dd .lead {
 
 .formblock .form_table td { border: 0px;  }
 
-.fancybox-content {
+.fancybox-content,.contact-form {
+    background: #fff;
     max-width: 500px;
     padding: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999;
 }
 
 .ajax-result-form2 { margin: 0px; padding: 0px; margin-top: 15px; margin-bottom: 15px;    }

@@ -21,6 +21,11 @@ class PageController extends Controller
         return view('pages.services');
     }
 
+    public function services_details($id)
+    {
+        return view('pages.service_details');
+    }
+
     public function work()
     {
         return view('pages.work');

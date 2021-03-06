@@ -1,9 +1,5 @@
 $(document).ready(function(){
-
 	"use strict";
-
-
-
 	/* =================================
 	NAVBAR
 	=================================== */
@@ -89,7 +85,6 @@ $(document).ready(function(){
 	/* =================================
 	OWL
 	=================================== */
-
 	var caro = $("#caro");
 	caro.owlCarousel({
 		items: 1,
@@ -137,12 +132,6 @@ $(document).ready(function(){
 		$('.panel-heading').removeClass('active');
 		$(this).parents('.panel-heading').addClass('active');
 	});
-
-
-
-
-
-
 });
 
 
