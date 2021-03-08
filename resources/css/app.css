@@ -4,6 +4,18 @@
 @import "_modifiers.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i, 600,700,800");
 
+.thanx_block {
+    cursor: pointer;
+}
+.contact-form-layout {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: #041e42;
+    top: 0;
+    z-index: 999;
+    opacity: 50%;
+}
 .contact-form-close {
     top: 0;
     right: 0;
@@ -2403,8 +2415,9 @@ ul.circle li:before {
     bottom: initial; }
 .navbar-main .navbar-brand {
     position: absolute;
-    left: 40px;
-    top: -85px; }
+    left: 20px;
+    top: -85px;
+}
 .navbar-main .navbar-collapse {
     padding-right: 0;
     padding-left: 0; }
@@ -3176,7 +3189,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
     margin-left: 30px; }
 
 
-
 @media (max-width: 1024px) {
     .slides-navigation a.prev {
         left: -20px; }
@@ -3188,31 +3200,27 @@ dl.hiw dd h4, dl.hiw dd .lead {
         left: -20px; }
 
     .testimony .owl-nav .owl-next {
-        right: -20px; } }
+        right: -20px; }
+}
+
+
 @media (max-width: 768px) {
     .navbar-toggle {
         clear: left;
-        float: right; }
-
+        float: right;
+        margin-right: 0;
+    }
     .topbar {
         height: auto; }
-
     .topbar-left {
         text-align: center; }
-
     .topbar-right {
         text-align: center !important; }
-
     .topbar-menu, .topbar-sosmed {
         margin-left: 0;
         margin-bottom: 0; }
-
     .nav > li > a {
         padding: 10px 6px; }
-
-    /*.navbar-main .dropdown-menu > li a{
-        color: #333333;
-    }*/
     .box-icon-1 .icon {
         clear: left;
         display: block;
@@ -3221,12 +3229,10 @@ dl.hiw dd h4, dl.hiw dd .lead {
     .box-icon-1 .body-content {
         text-align: center;
         margin-left: 0; }
-
     .container-nav .btn-orange-cta {
         position: absolute;
         right: 10px;
         top: 0; }
-
     .wrap-caption {
         width: 100%; }
 
@@ -3255,15 +3261,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
     .contact-info > div {
         display: block;
         margin-right: 0px; }
-
-    /*.topbar-logo{
-        .btn-cta{
-            clear: right;
-            position: relative;
-             transform: translateY(78px);
-            z-index: 4;
-        }
-    }*/
     .bos-quote .bos-photo {
         clear: left;
         display: block;
@@ -3273,7 +3270,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
         clear: left;
         display: block;
         margin-left: 0; }
-
     h2, .banner-page .title-page, .banner-page .title-page {
         font-size: 2em; }
 
@@ -3302,8 +3298,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
 
     .cta .cta-info {
         width: 100%; } }
-
-
 
 .field_accept { color: #cccccc; font-size: 12px;  line-height: 15px; }
 

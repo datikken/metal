@@ -23,7 +23,6 @@
         @yield('content')
     @include('components.footer')
 
-{{--    @include('components.forms.callback_form')--}}
     @livewire('contact-form')
 
     @livewireScripts

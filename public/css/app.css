@@ -9,6 +9,20 @@
   display: none;
 }
 
+.thanx_block {
+  cursor: pointer;
+}
+
+.contact-form-layout {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #041e42;
+  top: 0;
+  z-index: 999;
+  opacity: 50%;
+}
+
 .contact-form-close {
   top: 0;
   right: 0;
@@ -2913,7 +2927,7 @@ ul.circle li:before {
 
 .navbar-main .navbar-brand {
   position: absolute;
-  left: 40px;
+  left: 20px;
   top: -85px;
 }
 
@@ -3915,6 +3929,7 @@ dl.hiw dd h4, dl.hiw dd .lead {
   .navbar-toggle {
     clear: left;
     float: right;
+    margin-right: 0;
   }
 
   .topbar {
@@ -3937,10 +3952,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
   .nav > li > a {
     padding: 10px 6px;
   }
-
-  /*.navbar-main .dropdown-menu > li a{
-        color: #333333;
-    }*/
 
   .box-icon-1 .icon {
     clear: left;
@@ -4006,15 +4017,6 @@ dl.hiw dd h4, dl.hiw dd .lead {
     display: block;
     margin-right: 0px;
   }
-
-  /*.topbar-logo{
-        .btn-cta{
-            clear: right;
-            position: relative;
-             transform: translateY(78px);
-            z-index: 4;
-        }
-    }*/
 
   .bos-quote .bos-photo {
     clear: left;

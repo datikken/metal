@@ -10,4 +10,9 @@ class AjaxContentController extends Controller
     {
         return view('components.forms.callback_form');
     }
+
+    public function show_thanx()
+    {
+        return view('components.forms.thanx');
+    }
 }

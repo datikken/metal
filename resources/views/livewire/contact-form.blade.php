@@ -1,4 +1,4 @@
-<div class="formblock contact-form">
+<div class="formblock contact-form as-none">
     <h1>Обратный звонок</h1>
     <p class="ajax-result-form2">Укажите Ваш номер телефона и имя</p>
     <form wire:submit.prevent="saveContact">
@@ -31,7 +31,8 @@
                 <td style="padding: 0px; padding-top: 15px; text-align: center;">
 
                     <div class="field_accept_callback">
-                        Нажимая кнопку "Отправить", я даю своё согласие на обработку персональных данных в соответствии
+                        Нажимая кнопку "Отправить", я даю своё согласие на обработку персональных данных в
+                        соответствии
                         с законом ФЗ-152 О персональных данных.
                     </div>
 
@@ -49,23 +50,4 @@
         </svg>
     </button>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let form = document.querySelector('.contact-form');
-        let close = document.querySelector('.contact-form-close');
-            form.classList.add('as-none');
-            close.addEventListener('click', () => form.classList.toggle('as-none'))
-
-        let button = document.querySelector('#contact_form_trigger');
-            button.addEventListener('click', function() {
-
-            if(form.classList.contains('as-none')) {
-                form.classList.remove('as-none');
-            }
-        });
-
-        Livewire.on('contactCollected', postId => {
-            form.classList.add('as-none');
-        });
-    })
-</script>
+<div class="contact-form-layout as-none"></div>

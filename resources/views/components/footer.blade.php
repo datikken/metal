@@ -125,8 +125,10 @@
             </div>
         </div>
     </div>
-
 </div>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.superslides.js"></script>
@@ -134,7 +136,6 @@
 <script type="text/javascript" src="/js/bootstrap-hover-dropdown.min.js"></script>
 <script type="text/javascript" src="/js/easings.js"></script>
 <script type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/js/modernizr.min.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
