@@ -2,6 +2,7 @@
 namespace App\Repositories;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Category;
 use App\Repositories\Interfaces\PostRepositoryInterface;
 
 class PostRepository implements PostRepositoryInterface
@@ -11,10 +12,12 @@ class PostRepository implements PostRepositoryInterface
         return Post::all();
     }
 
-    public function getByType($type)
+    public function getByCategory($type)
     {
-        return Post::where('post_type', $type)
-            ->paginate(3);
+        $cat = Category::where('name', $type)->get();
+        $posts = Post::where('category_id', $cat[0]->id)->paginate(6);
+
+        return $posts;
     }
 
     public function getByTag($tag)
@@ -31,9 +34,7 @@ class PostRepository implements PostRepositoryInterface
 
     public function getByUser(User $user)
     {
-// retrieving models that have any of the given tags
-// retrieve models that have all of the given tags
-//        NewsItem::withAllTags(['tag1', 'tag2']);
+        // NewsItem::withAllTags(['tag1', 'tag2']);
 
         return Post::where('user_id'. $user->id)->get();
     }

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
+
 @section('content')
     @include('components.post_page_parallax', [
-        'heading' => 'О компании',
-        'crumb' => 'О компании'
-        ])
-
+        'heading' => 'Услуги',
+        'crumb' => 'Услуги'
+    ])
 
     <div class="section why overlap">
         <div class="container">
@@ -16,12 +16,13 @@
                 </div>
 
                 <div class="col-sm-8 col-md-8 col-md-pull-4">
-                    @include('components.post_content', ['post' => $post ])
+                    <div class="single-page">
+                        @include('components.post_content', ['post' => $post ])
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    @include('components.post_content')
     @include('components.info')
 @endsection

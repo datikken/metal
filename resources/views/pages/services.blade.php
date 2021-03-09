@@ -2,10 +2,11 @@
 
 
 @section('content')
-    @include('components.post_page_parallax.blade.php', [
+    @include('components.post_page_parallax', [
         'heading' => 'Услуги',
         'crumb' => 'Услуги'
     ])
-    @include('components.services-list')
+
+    @include('components.post_page_grid')
     @include('components.info')
 @endsection

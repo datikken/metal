@@ -13,9 +13,11 @@ class Post extends Model
 
     protected $fillable = [
         'title',
-        'content',
-        'user_id',
-        'created_at',
-        'updated_at'
+        'content'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\Category');
+    }
 }

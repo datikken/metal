@@ -12,10 +12,18 @@ class PostController extends Controller
     {
         $this->posts = $posts;
     }
-    public function work_list()
-    {
-        $posts = $this->posts->getByType('work');
 
-        return view('pages.work', ['posts' => $posts]);
+    public function services_list()
+    {
+        $posts = $this->posts->getByCategory('services');
+
+        return view('pages.services', ['posts' => $posts]);
+    }
+
+    public function work_details($id)
+    {
+        $post = Post::where('id', $id)->get();
+
+        return view('pages.post_details', ['post' => $post ]);
     }
 }

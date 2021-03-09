@@ -5,18 +5,16 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use NumaxLab\NovaCKEditor5Classic\CKEditor5Classic;
-use Spatie\TagsField\Tags;
-use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\Date;
 
-class Post extends Resource
+class Category extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\Post::class;
+    public static $model = \App\Models\Category::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -31,7 +29,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id','title','content','category'
+        'name',
     ];
 
     /**
@@ -44,10 +42,9 @@ class Post extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('title'),
-            CKEditor5Classic::make('content')->withFiles('public'),
-            Tags::make('Tags'),
-            BelongsTo::make('Category')
+            Text::make('name'),
+            Date::make('created_at'),
+            Date::make('updated_at')
         ];
     }
 
