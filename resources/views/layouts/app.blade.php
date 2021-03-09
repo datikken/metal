@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!--[if IE]>
-    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Металлообработка') }}</title>
     <meta name="description" content="Металлообработка"/>

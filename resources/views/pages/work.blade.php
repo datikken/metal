@@ -6,6 +6,6 @@
         'crumb' => 'Наши работы'
     ])
 
-    @include('components.post_page_grid')
+    @include('components.post_page_grid_2')
     @include('components.info')
 @endsection

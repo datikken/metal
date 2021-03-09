@@ -26,11 +26,6 @@ class PageController extends Controller
         return view('pages.service_details');
     }
 
-    public function work()
-    {
-        return view('pages.work');
-    }
-
     public function news()
     {
         return view('pages.news');

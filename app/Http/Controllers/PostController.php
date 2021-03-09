@@ -13,6 +13,20 @@ class PostController extends Controller
         $this->posts = $posts;
     }
 
+    public function work()
+    {
+        $posts = $this->posts->allByCategory('work');
+
+        return view('pages.work', ['posts' => $posts]);
+    }
+
+    public function work_details($id)
+    {
+        $post = $this->posts->singleByCategory('work', $id);
+
+        return view('pages.work', ['post' => $post]);
+    }
+
     public function service_details($id)
     {
         $post = $this->posts->singleByCategory('services', $id);
@@ -25,12 +39,5 @@ class PostController extends Controller
         $posts = $this->posts->allByCategory('services');
 
         return view('pages.services', ['posts' => $posts]);
-    }
-
-    public function work_details($id)
-    {
-        $post = Post::where('id', $id)->get();
-
-        return view('pages.post_details', ['post' => $post ]);
     }
 }

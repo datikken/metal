@@ -2,7 +2,7 @@
 
 
 @section('content')
-    @include('components.post_page_parallax.blade.php', [
+    @include('components.post_page_parallax', [
         'heading' => 'Новости',
         'crumb' => 'Новости'
     ])
