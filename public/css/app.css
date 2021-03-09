@@ -1788,7 +1788,6 @@ ul.circle li:before {
 
 .testimonial-2 {
   position: relative;
-  margin-bottom: 30px;
   margin-left: 0;
   margin-bottom: 100px;
   background-color: #041e42;
@@ -2929,6 +2928,9 @@ ul.circle li:before {
   position: absolute;
   left: 20px;
   top: -85px;
+}
+
+@media screen and (min-width: 1024px) {
 }
 
 .navbar-main .navbar-collapse {

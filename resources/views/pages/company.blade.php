@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.banner-page-about', [
+    @include('components.post_page_parallax.blade.php', [
         'heading' => 'О компании',
         'crumb' => 'О компании'
         ])

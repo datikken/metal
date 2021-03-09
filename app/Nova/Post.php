@@ -4,7 +4,10 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
+use Spatie\TagsField\Tags;
+use Laravel\Nova\Fields\Select;
 
 class Post extends Resource
 {
@@ -28,7 +31,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id','title','content'
     ];
 
     /**
@@ -41,6 +44,14 @@ class Post extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+            Text::make('title'),
+            Trix::make('content'),
+            Tags::make('Tags'),
+            Select::make('post_type')->options([
+                'work' => 'Work',
+                'news' => 'News',
+                'service' => 'Service',
+            ])->displayUsingLabels()
         ];
     }
 

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-
 @section('content')
-    @include('components.banner-page-about', [
+    @include('components.post_page_parallax', [
         'heading' => 'Наши работы',
         'crumb' => 'Наши работы'
     ])
-    @include('components.work')
+
+    @include('components.post_page_grid')
     @include('components.info')
 @endsection

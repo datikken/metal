@@ -1509,12 +1509,8 @@ ul.circle li:before {
 .testimonial-1 .company {
     color: #a2a2a2;
     margin-bottom: 20px; }
-
-
-
 .testimonial-2 {
     position: relative;
-    margin-bottom: 30px;
     margin-left: 0;
     margin-bottom: 100px;
     background-color: #041e42; }
@@ -1875,9 +1871,6 @@ ul.circle li:before {
 .panel-faq .collapse.in {
     display: block;
     visibility: visible; }
-
-
-
 .faq-list {
     margin: 0;
     padding: 0; }
@@ -2418,6 +2411,11 @@ ul.circle li:before {
     left: 20px;
     top: -85px;
 }
+
+@media screen and (min-width: 1024px) {
+
+}
+
 .navbar-main .navbar-collapse {
     padding-right: 0;
     padding-left: 0; }
