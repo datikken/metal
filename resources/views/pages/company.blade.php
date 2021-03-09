@@ -6,7 +6,6 @@
         'crumb' => 'О компании'
         ])
 
-
     <div class="section why overlap">
         <div class="container">
             <div class="row">
@@ -16,7 +15,11 @@
                 </div>
 
                 <div class="col-sm-8 col-md-8 col-md-pull-4">
-                    @include('components.post_content', ['post' => $post ])
+                    @if(isset($post))
+                        @include('components.post_content', ['post' => $post ])
+                    @else
+                        @include('components.post_content')
+                    @endif
                 </div>
             </div>
         </div>
