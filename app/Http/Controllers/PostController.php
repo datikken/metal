@@ -24,7 +24,7 @@ class PostController extends Controller
     {
         $post = $this->posts->singleByCategory('work', $id);
 
-        return view('pages.work', ['post' => $post]);
+        return view('pages.post_details', ['post' => $post]);
     }
 
     public function service_details($id)

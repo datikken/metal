@@ -3,7 +3,7 @@
 
 @section('content')
     @include('components.post_page_parallax', [
-        'heading' => 'Услуги',
+        'heading' => 'post_category',
         'crumb' => 'Услуги'
     ])
 

@@ -9,7 +9,6 @@
         </div>
 
 
-
         <div class="row grid-services" style="position: relative; height: 390px;">
             <div class="col-sm-6 col-md-4" style="position: absolute; left: 0px; top: 0px;">
                 <div class="box-image-4">
