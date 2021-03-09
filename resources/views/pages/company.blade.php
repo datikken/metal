@@ -25,6 +25,9 @@
         </div>
     </div>
 
-    @include('components.post_content')
+    @if(isset($post))
+        @include('components.post_content')
+    @endif
+
     @include('components.info')
 @endsection
