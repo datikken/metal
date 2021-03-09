@@ -7,5 +7,8 @@ interface PostRepositoryInterface
 {
     public function all();
 
-    public function getByUser(User $user);
+    public function singleByCategory($type, $id);
+    public function allByCategory($type);
+    public function getById($type);
+    public function getByTag($type);
 }

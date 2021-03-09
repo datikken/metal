@@ -13,9 +13,16 @@ class PostController extends Controller
         $this->posts = $posts;
     }
 
+    public function service_details($id)
+    {
+        $post = $this->posts->singleByCategory('services', $id);
+
+        return view('pages.post_details', ['post' => $post]);
+    }
+
     public function services_list()
     {
-        $posts = $this->posts->getByCategory('services');
+        $posts = $this->posts->allByCategory('services');
 
         return view('pages.services', ['posts' => $posts]);
     }

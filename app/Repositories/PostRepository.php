@@ -7,12 +7,23 @@ use App\Repositories\Interfaces\PostRepositoryInterface;
 
 class PostRepository implements PostRepositoryInterface
 {
+    // NewsItem::withAllTags(['tag1', 'tag2']);
     public function all()
     {
         return Post::all();
     }
 
-    public function getByCategory($type)
+    public function singleByCategory($type, $id)
+    {
+        $cat = Category::where('name', $type)->get();
+        $posts = Post::where('category_id', $cat[0]->id)
+            ->where('id', $id)
+            ->get();
+
+        return $posts;
+    }
+
+    public function allByCategory($type)
     {
         $cat = Category::where('name', $type)->get();
         $posts = Post::where('category_id', $cat[0]->id)->paginate(6);
@@ -30,12 +41,5 @@ class PostRepository implements PostRepositoryInterface
     public function getById($id)
     {
         return Post::where('id', $id)->get();
-    }
-
-    public function getByUser(User $user)
-    {
-        // NewsItem::withAllTags(['tag1', 'tag2']);
-
-        return Post::where('user_id'. $user->id)->get();
     }
 }

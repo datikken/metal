@@ -4,6 +4,8 @@
             <div class="row">
                 @foreach($posts as $post)
 
+{{--                    @php dump($post); @endphp--}}
+
                     <div class="col-sm-6 col-md-4">
                         <div class="feature-box-8">
                             <div class="media">
