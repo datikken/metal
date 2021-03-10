@@ -1,4 +1,4 @@
-<div class="formblock contact-form as-none">
+<div class="formblock contact-form">
     <h1>Обратный звонок</h1>
     <p class="ajax-result-form2">Укажите Ваш номер телефона и имя</p>
     <form wire:submit.prevent="saveContact">

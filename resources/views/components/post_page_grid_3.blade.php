@@ -1,6 +1,7 @@
 <div class="section why overlap">
     <div class="container">
         <div class="row">
+
             @foreach($posts as $post)
             <div class="col-sm-6 col-md-4">
                 <div class="box-news-1">
