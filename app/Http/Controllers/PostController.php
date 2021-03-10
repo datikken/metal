@@ -20,6 +20,13 @@ class PostController extends Controller
         return view('pages.news', ['posts' => $news]);
     }
 
+    public function news_details()
+    {
+        $news = $this->posts->allByCategory('news', 3);
+
+        return view('pages.news_details', ['posts' => $news]);
+    }
+
     public function work()
     {
         $posts = $this->posts->allByCategory('work', 6);
