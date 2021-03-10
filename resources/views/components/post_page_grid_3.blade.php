@@ -1,4 +1,3 @@
-
 <div class="section why overlap">
     <div class="container">
         <div class="row">
@@ -10,7 +9,7 @@
                     </div>
                     <div class="body">
                         <div class="title">
-                            <a href="/news/bolshoj-zagolovok-vtoroj-novost-v-dve-stroki/" title="">
+                            <a href="{{ '/' . Category::getById($post->category_id)[0]->name }}/{{ $post->id }}" title="">
                                 {{ $post->title }}
                             </a>
                         </div>

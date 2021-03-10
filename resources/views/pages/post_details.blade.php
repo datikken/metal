@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-
 @section('content')
     @include('components.post_page_parallax', [
         'heading' => 'post_category',

@@ -1,3 +1,5 @@
+{{--@php dump($post); @endphp--}}
+
 @if(isset($post[0]->content))
     @php echo($post[0]->content ); @endphp
 @else
