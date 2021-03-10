@@ -11,14 +11,14 @@ use App\Http\Controllers\PostController;
  */
 Route::get('/', [PageController::class, 'index'])->name('index');
 Route::get('/company', [PageController::class, 'company'])->name('company');
+Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
+
 Route::get('/services', [PostController::class, 'services_list'])->name('services_list');
 Route::get('/services/{id}', [PostController::class, 'service_details'])->name('service_details');
-
 Route::get('/work', [PostController::class, 'work'])->name('work');
 Route::get('/work/{id}', [PostController::class, 'work_details'])->name('work_details');
-
 Route::get('/news', [PostController::class, 'news'])->name('news');
-Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
+Route::get('/news/{id}', [PostController::class, 'news_details'])->name('news_details');
 
 /**
  * API
