@@ -17,7 +17,7 @@ Route::get('/services/{id}', [PostController::class, 'service_details'])->name('
 Route::get('/work', [PostController::class, 'work'])->name('work');
 Route::get('/work/{id}', [PostController::class, 'work_details'])->name('work_details');
 
-Route::get('/news', [PageController::class, 'news'])->name('news');
+Route::get('/news', [PostController::class, 'news'])->name('news');
 Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
 
 /**

@@ -23,10 +23,10 @@ class PostRepository implements PostRepositoryInterface
         return $posts;
     }
 
-    public function allByCategory($type)
+    public function allByCategory($type, $paginate)
     {
         $cat = Category::where('name', $type)->get();
-        $posts = Post::where('category_id', $cat[0]->id)->paginate(6);
+        $posts = Post::where('category_id', $cat[0]->id)->paginate($paginate)->onEachSide(3);;
 
         return $posts;
     }

@@ -1171,7 +1171,7 @@ ul.circle li:before {
   border-radius: 0px;
 }
 
-.pagination > li > a {
+.pagination > li > a, .pagination > li > span {
   padding: 15px 20px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -2931,6 +2931,9 @@ ul.circle li:before {
 }
 
 @media screen and (min-width: 1024px) {
+  .navbar-main .navbar-brand {
+    left: 40px;
+  }
 }
 
 .navbar-main .navbar-collapse {

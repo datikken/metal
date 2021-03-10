@@ -13,9 +13,16 @@ class PostController extends Controller
         $this->posts = $posts;
     }
 
+    public function news()
+    {
+        $news = $this->posts->allByCategory('news', 3);
+
+        return view('pages.news', ['posts' => $news]);
+    }
+
     public function work()
     {
-        $posts = $this->posts->allByCategory('work');
+        $posts = $this->posts->allByCategory('work', 6);
 
         return view('pages.work', ['posts' => $posts]);
     }
@@ -36,7 +43,7 @@ class PostController extends Controller
 
     public function services_list()
     {
-        $posts = $this->posts->allByCategory('services');
+        $posts = $this->posts->allByCategory('services', 3);
 
         return view('pages.services', ['posts' => $posts]);
     }

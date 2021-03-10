@@ -21,7 +21,7 @@
                 @endforeach
             </div>
 
-            {!! $posts->links() !!}
+            @include('components.pagination')
 
         </div>
     </div>
