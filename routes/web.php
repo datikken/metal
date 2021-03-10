@@ -31,6 +31,7 @@ Route::get('/test', [PageController::class, 'test'])->name('test');
  */
 Route::get('/ajax_callback_form', [AjaxContentController::class, 'ajax_callback_form'])->name('ajax_callback_form');
 Route::get('/show_thanx', [AjaxContentController::class, 'show_thanx'])->name('show_thanx');
+Route::get('show_thanx_feedback', [AjaxContentController::class, 'show_thanx_feedback'])->name('show_thanx_feedback');
 
 /**
  * Profile routes

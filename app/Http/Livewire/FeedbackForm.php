@@ -29,6 +29,8 @@ class FeedbackForm extends Component
         $validatedData = $this->validate();
 
         Contact::create($validatedData);
+
+        $this->emit('feedbackCollected');
     }
 
     public function render()

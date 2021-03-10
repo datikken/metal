@@ -15,4 +15,9 @@ class AjaxContentController extends Controller
     {
         return view('components.forms.thanx');
     }
+
+    public function show_thanx_feedback()
+    {
+        return view('components.forms.thanx_feedback');
+    }
 }

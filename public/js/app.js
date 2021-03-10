@@ -1843,11 +1843,14 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _classes_CallbackFrom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./classes/CallbackFrom */ "./resources/js/classes/CallbackFrom.js");
+/* harmony import */ var _classes_FeedbackForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes/FeedbackForm */ "./resources/js/classes/FeedbackForm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
   new _classes_CallbackFrom__WEBPACK_IMPORTED_MODULE_0__.default();
+  new _classes_FeedbackForm__WEBPACK_IMPORTED_MODULE_1__.default();
 });
 
 /***/ }),
@@ -1966,6 +1969,60 @@ var CallbackFrom = /*#__PURE__*/function () {
   }]);
 
   return CallbackFrom;
+}();
+
+
+
+/***/ }),
+
+/***/ "./resources/js/classes/FeedbackForm.js":
+/*!**********************************************!*\
+  !*** ./resources/js/classes/FeedbackForm.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FeedbackForm)
+/* harmony export */ });
+/* harmony import */ var scroll_lock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scroll-lock */ "./node_modules/scroll-lock/dist/scroll-lock.js");
+/* harmony import */ var scroll_lock__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(scroll_lock__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var FeedbackForm = /*#__PURE__*/function () {
+  function FeedbackForm() {
+    _classCallCheck(this, FeedbackForm);
+
+    this.form = document.querySelector('[data-feedback-form]');
+    this.init_say_thanx();
+  }
+
+  _createClass(FeedbackForm, [{
+    key: "init_say_thanx",
+    value: function init_say_thanx() {
+      var that = this;
+      Livewire.on('feedbackCollected', function (postId) {
+        var thanx_block = document.createElement('div');
+        that.form.innerHTML = '';
+        fetch('/show_thanx_feedback').then(function (response) {
+          return response.text();
+        }).then(function (html) {
+          that.form.innerHTML = html;
+        })["catch"](function (err) {
+          console.warn('Something went wrong.', err);
+        });
+      });
+    }
+  }]);
+
+  return FeedbackForm;
 }();
 
 

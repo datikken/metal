@@ -1,4 +1,4 @@
-<div class="col-sm-8 col-md-8 col-md-pull-4">
+<div class="col-sm-8 col-md-8 col-md-pull-4" data-feedback-form>
     <div class="content">
 
         <h3 class="section-heading-2">
