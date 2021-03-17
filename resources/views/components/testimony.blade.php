@@ -52,9 +52,3 @@
         </div>
     </div>
 </div>
-
-
-
-<script>
-console.log('yo')
-</script>
