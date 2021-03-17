@@ -14,9 +14,9 @@ class AddPostsTablePostCoverPostCoverDescPostCoverTitle extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->text('post_cover');
-            $table->text('post_cover_title');
-            $table->text('post_cover_description');
+            $table->text('post_cover')->nullable();
+            $table->text('post_cover_title')->nullable();
+            $table->text('post_cover_description')->nullable();
         });
     }
 
