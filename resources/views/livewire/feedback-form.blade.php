@@ -13,19 +13,19 @@
               enctype="multipart/form-data">
             <div class="form-group">
                 @error('name') <span class="error">{{ $message }}</span> @enderror
-                <input type="text" wire:model="name" class="form-control" name="name" id="name" placeholder="Ваше имя">
+                <input type="text" wire:model="name" autofocus class="form-control" name="name" id="name" placeholder="Ваше имя">
             </div>
             <div class="form-group">
                 @error('email') <span class="error">{{ $message }}</span> @enderror
-                <input type="text" wire:model="email"  class="form-control" name="email" id="email" placeholder="Электронная почта">
+                <input type="text" wire:model="email" autofocus class="form-control" name="email" id="email" placeholder="Электронная почта">
             </div>
             <div class="form-group">
                 @error('tel') <span class="error">{{ $message }}</span> @enderror
-                <input type="text" wire:model="tel"  class="form-control" name="tel" id="tel" placeholder="Телефон">
+                <input type="text" wire:model="tel" autofocus class="form-control" name="tel" id="tel" placeholder="Телефон">
             </div>
             <div class="form-group">
                 @error('message') <span class="error">{{ $message }}</span> @enderror
-                <textarea name="message" wire:model="message"  id="text" class="form-control" rows="6" placeholder="Сообщение"></textarea>
+                <textarea name="message" wire:model="message" autofocus id="text" class="form-control" rows="6" placeholder="Сообщение"></textarea>
             </div>
             <div class="form-group">
                 <div class="field_accept">

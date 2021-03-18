@@ -78,7 +78,7 @@
 
                 <nav class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="{{ (request()->is('/')) ? 'active' : '' }}" >
+                        <li class="{{ (request()->is('/')) ? 'active' : '' }}">
                             <a href="/">Главная</a>
                         </li>
                         <li class="{{ (request()->is('company')) ? 'active' : '' }}">
@@ -107,7 +107,7 @@
                         </li>
                         <li class="{{ (request()->is('contacts')) ? 'active' : '' }}">
                             <a href="/contacts/">Контакты</a>
-                        </liclass>
+                            </liclass>
                     </ul>
 
                 </nav>

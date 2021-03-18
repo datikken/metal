@@ -15,6 +15,7 @@
                            id="tel"
                            value=""
                            class="form-control"
+                           autofocus
                            type="text">
                 </td>
             </tr>
@@ -24,7 +25,7 @@
                         <label>Ваше имя</label>
                     </div>
                     @error('name') <span class="error">{{ $message }}</span> @enderror
-                    <input wire:model="name" name="name" id="name" value="" class="form-control" type="text">
+                    <input wire:model="name" autofocus name="name" id="name" value="" class="form-control" type="text">
                 </td>
             </tr>
             <tr>

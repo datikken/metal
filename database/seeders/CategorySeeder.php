@@ -15,12 +15,11 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $faker = \Faker\Factory::create();
+        $tags = ['news', 'services', 'work'];
 
         for ($i = 0; $i < 10; ++$i) {
             Category::create([
-                'name' => $faker->name,
-                'description' => $faker->email,
-                'slug' => $faker->word,
+                'name' => $tags[rand(0, 2)]
             ]);
         }
     }

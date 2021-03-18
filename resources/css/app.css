@@ -2450,6 +2450,8 @@ ul.circle li:before {
     padding: 0;
     border: 0;
     border-radius: 0;
+    overflow-y: scroll;
+    max-height: 293px;
     z-index: 99999; }
 .navbar-main .dropdown-menu > li {
     text-transform: uppercase;
