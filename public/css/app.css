@@ -967,6 +967,8 @@ ul.circle li:before {
   margin-left: 0;
   margin-bottom: 30px;
   padding: 0;
+  max-height: 335px;
+  overflow-y: auto;
 }
 
 .category-nav {
